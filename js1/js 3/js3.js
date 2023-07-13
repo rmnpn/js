@@ -47,12 +47,11 @@ let ii = 0 ;
 
 let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
 
+    document.write(`<ul>`)
     for (let list of listOfItems) {
-        document.write(`<ul>
-                            <li>${list}</li>
-                       </ul>`)
+        document.write(`<li>${list}</li>`)
     }
-
+    document.write(`</ul>`)
 //
 // -----------------------------------------------
 //
@@ -159,13 +158,13 @@ let users = [
 //     - користувачів зі статусом true
 for (let user of users)
 {
-    if (user.status==true) {
+    if (user.status) {
         document.write(`<div>трушні - ${user.name}</div>`)
     }
 }
 // - користувачів зі статусом false
 for (let user of users) {
-    if (user.status == false) {
+    if (!user.status) {
         document.write(`<div>фолсні - ${user.name}</div>`)
     }
 }

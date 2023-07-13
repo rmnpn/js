@@ -78,9 +78,22 @@ for (let numberokten of arrmas) {
 
 // 8. вивести масив в зворотньому порядку.
 
-for (let i = 9; i>=0 ; i--) {
+for (let i = arrmas.length; i>=0 ; i--) {
     const zvornumber = arrmas[i];
 
     console.log(zvornumber);
 }
+// 5. перебрати циклом while та вивести  числа тільки парні  значення
+i=0
+while (i<arrmas.length) {
+    const pairarrwhile = arrmas[i];
+    console.log(pairarrwhile)
+    i+=2;
+}
 
+// 6. перебрати циклом for та вивести  числа тільки парні  значення
+for (let i = 0; i < arrmas.length; i+=+2) {
+const pairarray = arrmas[i];
+console.log(pairarray)
+}
+// 9. всі попередні завдання (окрім 8), але в зворотньому циклі (с заду на перед)
