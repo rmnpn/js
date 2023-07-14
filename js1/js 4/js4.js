@@ -22,7 +22,7 @@ console.log(r3);
 // - створити функцію яка обчислює та повертає площу циліндру висотою h, та радіутом r
 
 function cilindr (h,r) {
-    return 2*Math.PI*r*(r+h);;
+    return 2*Math.PI*r*(r+h);
 }
 
 let r4 = cilindr (2,3)

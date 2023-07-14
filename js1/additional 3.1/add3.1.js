@@ -78,7 +78,7 @@ for (let numberokten of arrmas) {
 
 // 8. вивести масив в зворотньому порядку.
 
-for (let i = arrmas.length; i>=0 ; i--) {
+for (let i = arrmas.length-1; i>=0 ; i--) {
     const zvornumber = arrmas[i];
 
     console.log(zvornumber);
